@@ -1,0 +1,12 @@
+{
+  "domain": "simplechores",
+  "name": "Simple Chores",
+  "codeowners": [
+    "@Glup3"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/Glup3/simplechores",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Glup3/simplechores/issues",
+  "version": "0.1.0"
+}
