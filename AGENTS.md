@@ -47,10 +47,10 @@ ruff format . --check            # Check formatting without changes
 ```bash
 # No unit tests currently - this is a template project
 
-# Validate integration manifest and structure
-# (Runs in CI via GitHub Actions)
+# Validate integration manifest and structure manually:
 # - hassfest: Validates Home Assistant integration structure
 # - HACS: Validates HACS compatibility
+# Note: GitHub Actions workflows are currently disabled
 ```
 
 ### Manual Testing
@@ -264,7 +264,9 @@ The project uses Ruff with Home Assistant core settings:
 
 ## CI/CD
 
-GitHub Actions automatically run on PRs and commits to main:
+**Note:** GitHub Actions workflows are currently disabled (`.yml.disabled` files in `.github/workflows/`).
+
+When enabled, they would run:
 - **Lint:** Ruff formatting and linting checks
 - **Validate:** Hassfest and HACS validation
 
