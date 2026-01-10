@@ -40,6 +40,10 @@
     "features": {
         "ghcr.io/devcontainers-extra/features/apt-packages:1": {
             "packages": "ffmpeg,libturbojpeg0,libpcap-dev"
-        }
-    }
+        },
+        "ghcr.io/danzilberdan/devcontainers/opencode:0": {}
+    },
+    "mounts": [
+        "source=${localEnv:HOME}/.local/share/opencode/auth.json,target=/mnt/opencode-auth.json,type=bind,consistency=cached"
+    ]
 }
