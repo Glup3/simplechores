@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 
 ENTITY_DESCRIPTIONS = (
     SensorEntityDescription(
-        key="simplechores",
+        key="simple_chores",
         name="Integration Sensor",
         icon="mdi:format-quote-close",
     ),
@@ -54,4 +54,5 @@ class IntegrationBlueprintSensor(IntegrationBlueprintEntity, SensorEntity):
     @property
     def native_value(self) -> str | None:
         """Return the native value of the sensor."""
-        return self.coordinator.data.get("body")
+        return "Ditto"
+        # return self.coordinator.data.get("body")
